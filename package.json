@@ -1,0 +1,23 @@
+{
+  "name": "scss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browsersync": "browser-sync start --server --files 'dist/style.css'",
+    "scss": "node-sass -o dist src/style.scss",
+    "start": "npm-run-all --parallel scss browsersync watch",
+    "watch": "onchange 'src/style.scss' -- npm run scss"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

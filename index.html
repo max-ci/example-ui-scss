@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Example UI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="dist/style.css">
+  </head>
+
+  <body>
+    <div class="menu">
+      <div class="menu__logo">Teachyee</div>
+
+      <div class="menu__separator"></div>
+
+      <ul class="menu__items">
+        <li class="menu__item">
+          <svg class="menu__item-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.5341 11.3174L18.6962 11.5981C18.9723 12.0764 18.8084 12.688 18.3301 12.9641L14.866 14.9641L17.366 19.2942C17.6422 19.7725 17.4783 20.3841 17 20.6603C16.5217 20.9364 15.9101 20.7725 15.634 20.2942L13.134 15.9641L9.66987 17.9641C9.19158 18.2403 8.57999 18.0764 8.30385 17.5981L8.14181 17.3174C7.30592 15.8696 7.24892 14.0999 7.98989 12.6013L8.16472 12.2477C8.31291 11.948 8.30151 11.594 8.13433 11.3045L7.32731 9.90668C7.21378 9.71003 7.0367 9.55787 6.82519 9.47524L4.4966 8.56548C4.2851 8.48285 4.10802 8.33069 3.99448 8.13404L3.16987 6.70578C2.89373 6.22748 3.05761 5.61589 3.5359 5.33975L10.4641 1.33975C10.9424 1.06361 11.554 1.22748 11.8301 1.70578L12.6547 3.13404C12.7683 3.33069 12.8115 3.56013 12.7773 3.78461L12.4009 6.25611C12.3667 6.48059 12.4099 6.71003 12.5235 6.90668L13.3305 8.30447C13.4977 8.59403 13.7985 8.78088 14.1322 8.8024L14.5258 8.82779C16.1941 8.93538 17.6982 9.86963 18.5341 11.3174Z" fill="white"/>
+          </svg>
+
+          <div class="menu__item-text">Pinned</div>
+        </li>
+
+        <li class="menu__item menu__item--active">
+          <svg class="menu__item-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="3" width="8" height="8" rx="3" fill="#3639A4"/>
+            <rect x="3" y="13" width="8" height="8" rx="3" fill="#3639A4"/>
+            <rect x="13" y="3" width="8" height="8" rx="3" fill="#3639A4"/>
+            <rect x="13" y="13" width="8" height="8" rx="3" fill="#3639A4"/>
+          </svg>
+
+          <div class="menu__item-text">All courses</div>
+        </li>
+
+        <li class="menu__item">
+          <svg class="menu__item-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 12C22 15.866 18.866 19 15 19H7C4.23858 19 2 16.7614 2 14C2 11.2386 4.23858 9 7 9C7.54527 9 8.07015 9.08728 8.56143 9.24864C9.63037 6.75042 12.1108 5 15 5C18.866 5 22 8.13401 22 12Z" fill="white"/>
+          </svg>
+
+          <div class="menu__item-text">Resources</div>
+        </li>
+
+        <li class="menu__item">
+          <svg class="menu__item-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2C4.34315 2 3 3.34315 3 5V19C3 20.6569 4.34315 22 6 22H18C19.6569 22 21 20.6569 21 19V7.74264C21 6.94699 20.6839 6.18393 20.1213 5.62132L17.3787 2.87868C16.8161 2.31607 16.053 2 15.2574 2H6ZM15 4.2071V6C15 7.10457 15.8954 8 17 8H18.7929C19.2383 8 19.4614 7.46143 19.1464 7.14644L15.8536 3.85355C15.5386 3.53857 15 3.76165 15 4.2071Z" fill="white"/>
+          </svg>
+
+          <div class="menu__item-text">Online books</div>
+        </li>
+
+        <li class="menu__item">
+          <svg class="menu__item-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.09404 3.53021C8.91179 4.07694 8.49582 4.50673 7.9923 4.78709C7.91399 4.83069 7.83646 4.87554 7.75974 4.9216C7.26504 5.21857 6.68419 5.36439 6.11891 5.24871L4.91713 5.00278C4.07375 4.8302 3.21455 5.21665 2.78412 5.96218L2.16314 7.03775C1.73271 7.78328 1.82763 8.72059 2.39879 9.36469L3.21381 10.2838C3.59573 10.7145 3.76078 11.2889 3.75166 11.8644C3.75023 11.9548 3.75023 12.0452 3.75166 12.1355C3.76078 12.7111 3.59572 13.2854 3.21381 13.7161L2.39879 14.6352C1.82763 15.2793 1.73271 16.2167 2.16314 16.9622L2.78412 18.0378C3.21455 18.7833 4.07375 19.1697 4.91714 18.9971L6.11883 18.7512C6.68411 18.6356 7.26497 18.7814 7.75967 19.0784C7.83642 19.1244 7.91397 19.1693 7.9923 19.2129C8.49582 19.4933 8.91179 19.9231 9.09404 20.4698L9.48159 21.6325C9.75382 22.4491 10.5181 23 11.379 23H12.6209C13.4818 23 14.2461 22.4491 14.5183 21.6325L14.9058 20.4698C15.0881 19.9231 15.5041 19.4933 16.0076 19.2129C16.0859 19.1693 16.1635 19.1244 16.2402 19.0784C16.7349 18.7814 17.3158 18.6356 17.881 18.7512L19.0827 18.9971C19.9261 19.1697 20.7853 18.7833 21.2157 18.0378L21.8367 16.9622C22.2671 16.2167 22.1722 15.2793 21.601 14.6352L20.7861 13.7162C20.4041 13.2855 20.2391 12.7111 20.2482 12.1356C20.2496 12.0452 20.2496 11.9548 20.2482 11.8644C20.2391 11.2888 20.4041 10.7144 20.7861 10.2838L21.601 9.36469C22.1722 8.72059 22.2671 7.78328 21.8367 7.03775L21.2157 5.96218C20.7853 5.21666 19.9261 4.8302 19.0827 5.00279L17.881 5.2487C17.3157 5.36438 16.7348 5.21857 16.2401 4.92159C16.1634 4.87554 16.0859 4.83069 16.0076 4.78709C15.5041 4.50673 15.0881 4.07694 14.9058 3.53021L14.5183 2.36754C14.2461 1.55086 13.4818 1 12.6209 1H11.379C10.5181 1 9.75382 1.55086 9.48159 2.36754L9.09404 3.53021ZM15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" fill="white"/>
+          </svg>
+
+          <div class="menu__item-text">Settings</div>
+        </li>
+      </ul>
+
+      <div class="menu__bottom">
+        <div class="menu__item menu__logout">
+          <svg class="menu__item-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C13.6569 2 15 3.34315 15 5V11H10C9.44772 11 9 11.4477 9 12C9 12.5523 9.44772 13 10 13H15V19C15 20.6569 13.6569 22 12 22H6C4.34315 22 3 20.6569 3 19V5C3 3.34315 4.34315 2 6 2H12Z" fill="white"/>
+            <path d="M15 13L18.0858 13L16.2929 14.7929C15.9024 15.1834 15.9024 15.8166 16.2929 16.2071C16.6834 16.5976 17.3166 16.5976 17.7071 16.2071L20.5 13.4142C21.2811 12.6332 21.281 11.3668 20.5 10.5858L17.7071 7.79289C17.3166 7.40237 16.6834 7.40237 16.2929 7.79289C15.9024 8.18342 15.9024 8.81658 16.2929 9.20711L18.0858 11L15 11V13Z" fill="white"/>
+          </svg>
+
+          <div class="menu__item-text">Log out</div>
+        </div>
+      </div>
+
+      <div class="menu__cta">Save big. Get Monthly Subscription.</div>
+    </div>
+
+    <div class="courses">
+      <div class="courses__top">
+        <div class="courses__search">
+          <div class="courses__search-icon">
+            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0319 16.6177C19.2635 15.078 20 13.125 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C13.125 20 15.078 19.2635 16.6177 18.0319L19.2929 20.7071C19.6834 21.0976 20.3166 21.0976 20.7071 20.7071C21.0976 20.3166 21.0976 19.6834 20.7071 19.2929L18.0319 16.6177ZM18 11C18 14.866 14.866 18 11 18C7.13401 18 4 14.866 4 11C4 7.13401 7.13401 4 11 4C14.866 4 18 7.13401 18 11Z" fill="#808080"/>
+            </svg>
+          </div>
+
+          <input type="text" class="courses__search-input" placeholder="Search">
+        </div>
+
+        <button type="button" class="courses__notifications">
+          <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.6116 20.152C14.8915 19.5867 14.4118 19 13.781 19H10.219C9.58821 19 9.10853 19.5867 9.38844 20.152C9.93874 21.2633 10.9027 22 12 22C13.0973 22 14.0613 21.2633 14.6116 20.152Z" fill="#808080"/>
+            <path d="M18.5194 17H5.4702C4.65823 17 4 16.3418 4 15.5298C4 15.1874 4.11953 14.8557 4.33795 14.592L5.19493 13.5573C5.49322 13.1972 5.65589 12.7439 5.65466 12.2763L5.64449 8.39447C5.63525 4.86562 8.49337 2 12.0222 2C15.5446 2 18.4 4.85542 18.4 8.37776L18.4 12.2984C18.4 12.7526 18.5546 13.1932 18.8383 13.5478L19.6755 14.5944C19.8856 14.857 20 15.1832 20 15.5194C20 16.3371 19.3371 17 18.5194 17Z" fill="#808080"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="courses__heading">All Courses</div>
+
+      <div class="courses__items">
+        <div class="courses__item">
+          <div class="courses__item-image">
+            <img src="images/course1.jpg" alt="alt">
+          </div>
+
+          <div class="courses__item-info">
+            <div class="courses__item-name">Software Testing and Automation</div>
+
+            <div class="courses__item-likes">
+              <div class="courses__item-likes-icon">
+                <svg width="17" height="16" viewbox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.52873 4.64668C7.25942 3.35304 5.19693 3.35304 3.92761 4.64668C2.66418 5.93433 2.66418 8.01765 3.92761 9.3053L7.83355 13.2861C8.27743 13.7385 9.00618 13.7385 9.45007 13.2861L13.356 9.3053C14.6194 8.01765 14.6194 5.93433 13.356 4.64668C12.0867 3.35304 10.0242 3.35304 8.75488 4.64668C8.69278 4.70997 8.59083 4.70997 8.52873 4.64668Z" fill="#6FDCE3"/>
+                </svg>
+              </div>
+
+              <div class="courses__item-likes-count">1.4K</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="courses__item courses__item--active">
+          <div class="courses__item-image">
+            <img src="images/course2.jpg" alt="alt">
+          </div>
+
+          <div class="courses__item-info">
+            <div class="courses__item-name">User Experience Design Fundamentals</div>
+
+            <div class="courses__item-likes">
+              <div class="courses__item-likes-icon">
+                <svg width="17" height="16" viewbox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.52873 4.64668C7.25942 3.35304 5.19693 3.35304 3.92761 4.64668C2.66418 5.93433 2.66418 8.01765 3.92761 9.3053L7.83355 13.2861C8.27743 13.7385 9.00618 13.7385 9.45007 13.2861L13.356 9.3053C14.6194 8.01765 14.6194 5.93433 13.356 4.64668C12.0867 3.35304 10.0242 3.35304 8.75488 4.64668C8.69278 4.70997 8.59083 4.70997 8.52873 4.64668Z" fill="#6FDCE3"/>
+                </svg>
+              </div>
+
+              <div class="courses__item-likes-count">1.4K</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="courses__item">
+          <div class="courses__item-image">
+            <img src="images/course3.jpg" alt="alt">
+          </div>
+
+          <div class="courses__item-info">
+            <div class="courses__item-name">Drawing and Paintin with Procreate</div>
+
+            <div class="courses__item-likes">
+              <div class="courses__item-likes-icon">
+                <svg width="17" height="16" viewbox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.52873 4.64668C7.25942 3.35304 5.19693 3.35304 3.92761 4.64668C2.66418 5.93433 2.66418 8.01765 3.92761 9.3053L7.83355 13.2861C8.27743 13.7385 9.00618 13.7385 9.45007 13.2861L13.356 9.3053C14.6194 8.01765 14.6194 5.93433 13.356 4.64668C12.0867 3.35304 10.0242 3.35304 8.75488 4.64668C8.69278 4.70997 8.59083 4.70997 8.52873 4.64668Z" fill="#6FDCE3"/>
+                </svg>
+              </div>
+
+              <div class="courses__item-likes-count">1.4K</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="courses__item">
+          <div class="courses__item-image">
+            <img src="images/course4.jpg" alt="alt">
+          </div>
+
+          <div class="courses__item-info">
+            <div class="courses__item-name">How To Become A Master of Influence</div>
+
+            <div class="courses__item-likes">
+              <div class="courses__item-likes-icon">
+                <svg width="17" height="16" viewbox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.52873 4.64668C7.25942 3.35304 5.19693 3.35304 3.92761 4.64668C2.66418 5.93433 2.66418 8.01765 3.92761 9.3053L7.83355 13.2861C8.27743 13.7385 9.00618 13.7385 9.45007 13.2861L13.356 9.3053C14.6194 8.01765 14.6194 5.93433 13.356 4.64668C12.0867 3.35304 10.0242 3.35304 8.75488 4.64668C8.69278 4.70997 8.59083 4.70997 8.52873 4.64668Z" fill="#6FDCE3"/>
+                </svg>
+              </div>
+
+              <div class="courses__item-likes-count">1.4K</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="course">
+      <div class="course__menu">
+        <ul class="course__menu-items">
+          <li class="course__menu-item">
+            <a href="#">My courses</a>
+          </li>
+
+          <li class="course__menu-item">
+            <a href="#">Purchases</a>
+          </li>
+
+          <li class="course__menu-item">
+            <a href="#">Help</a>
+          </li>
+        </ul>
+
+        <div class="course__menu-user">
+          <div class="course__menu-user-name">Shahriar Sultan</div>
+          <img src="images/user.jpg" class="course__menu-user-image" alt="Shahriar Sultan">
+        </div>
+      </div>
+
+      <div class="course__details">
+        <div class="course__info">
+          <div class="course__image">
+            <img src="images/course.jpg" alt="User Experience Dsign Fundamentals">
+          </div>
+
+          <h2 class="course__name">User Experience Dsign Fundamentals</h2>
+
+          <p class="course__description">
+            Gain the basic skills in User Experience. Study practice and theory. Find out techniques and tools used to design efficiently
+            <a href="#">more...</a>
+          </p>
+
+          <div class="course__actions">
+            <button type="button" class="course__action course__actions-buy">Buy Courses</button>
+
+            <button type="button" class="course__action course__actions-reviews">
+              <svg class="course__action-icon" width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6.5C2 4.84315 3.34315 3.5 5 3.5H19C20.6569 3.5 22 4.84315 22 6.5V16.5C22 18.1569 20.6569 19.5 19 19.5H8.36205C8.12811 19.5 7.90158 19.582 7.72187 19.7318L5.28037 21.7664C3.97771 22.8519 2 21.9256 2 20.2299V6.5ZM7 9.5C7 8.94772 7.44772 8.5 8 8.5H16C16.5523 8.5 17 8.94772 17 9.5C17 10.0523 16.5523 10.5 16 10.5H8C7.44772 10.5 7 10.0523 7 9.5ZM8 12.5C7.44772 12.5 7 12.9477 7 13.5C7 14.0523 7.44772 14.5 8 14.5H12C12.5523 14.5 13 14.0523 13 13.5C13 12.9477 12.5523 12.5 12 12.5H8Z" fill="black"/>
+              </svg>
+
+              Reviews
+            </button>
+          </div>
+        </div>
+
+        <div class="course__stats">
+          <div class="course__stats-item course__stats-item--featured">
+            <div class="course__stats-number">02<sup>30</sup>
+            </div>
+
+            <div class="course__stats-text">Starting in</div>
+
+            <div class="course__stats-unit">pm</div>
+          </div>
+
+          <div class="course__stats-item">
+            <div class="course__stats-number">60</div>
+
+            <div class="course__stats-text">Duration</div>
+
+            <div class="course__stats-unit">hrs</div>
+          </div>
+
+          <div class="course__stats-item">
+            <div class="course__stats-number">16</div>
+
+            <div class="course__stats-text">On Group</div>
+
+            <div class="course__stats-unit">ppl.</div>
+          </div>
+
+          <div class="course__stats-item">
+            <div class="course__stats-number">114</div>
+
+            <div class="course__stats-text">Behance</div>
+
+            <div class="course__stats-unit">cases</div>
+          </div>
+
+          <div class="course__stats-item course__stats-item--arrow">
+            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 4C13 3.44772 12.5523 3 12 3C11.4477 3 11 3.44772 11 4V18.0858L6.20711 13.2929C5.81658 12.9024 5.18342 12.9024 4.79289 13.2929C4.40237 13.6834 4.40237 14.3166 4.79289 14.7071L10.5858 20.5C11.3668 21.281 12.6332 21.281 13.4142 20.5L19.2071 14.7071C19.5976 14.3166 19.5976 13.6834 19.2071 13.2929C18.8166 12.9024 18.1834 12.9024 17.7929 13.2929L13 18.0858V4Z" fill="#3639A4"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="course__teachers">
+        <div class="course__teacher">
+          <div class="course__teacher-image">
+            <img src="images/teacher1.jpg" alt="Karim">
+          </div>
+
+          <div class="course__teacher-info">
+            <div class="course__teacher-name">Karim</div>
+
+            <div class="course__teacher-profession">UI/UX Designer,<br> Mentor</div>
+          </div>
+        </div>
+
+        <div class="course__teacher">
+          <div class="course__teacher-image">
+            <img src="images/teacher2.jpg" alt="Amrani">
+          </div>
+
+          <div class="course__teacher-info">
+            <div class="course__teacher-name">Amrani</div>
+
+            <div class="course__teacher-profession">Graphics Designer,<br> Mentor</div>
+          </div>
+        </div>
+
+        <div class="course__teacher">
+          <div class="course__teacher-image">
+            <img src="images/teacher2.jpg" alt="Amrani">
+          </div>
+
+          <div class="course__teacher-info">
+            <div class="course__teacher-name">Amrani</div>
+
+            <div class="course__teacher-profession">Graphics Designer,<br> Mentor</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
